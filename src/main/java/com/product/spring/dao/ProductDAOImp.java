@@ -1,6 +1,7 @@
 package com.product.spring.dao;
 
 import com.product.spring.model.Product;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -32,7 +33,13 @@ public class ProductDAOImp implements ProductDAO{
 
     @Override
     public void updateProduct(Long id, Product product) {
-
+        Session session = sessionFactory.getCurrentSession();
+        Product product2 = session.byId(Product.class).load(id);
+        product2.setCost(product.getCost());
+        product2.setName(product.getName());
+        product2.setQuantity(product.getQuantity());
+        product2.setDescription(product.getDescription());
+        session.flush();
     }
 
     @Override
