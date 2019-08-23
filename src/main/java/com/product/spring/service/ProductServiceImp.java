@@ -28,11 +28,13 @@ public class ProductServiceImp implements ProductService {
         return productDAO.saveProduct(product);
     }
 
+    @Transactional
     @Override
     public void updateProduct(Long id, Product product) {
         productDAO.updateProduct(id,product);
     }
 
+    @Transactional
     @Override
     public void deleteProduct(Long id) {
         productDAO.deleteProduct(id);
