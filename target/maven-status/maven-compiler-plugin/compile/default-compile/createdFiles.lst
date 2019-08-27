@@ -1,0 +1,9 @@
+com\product\spring\service\ProductServiceImp.class
+com\product\spring\controller\ProductController.class
+com\product\spring\dao\ProductDAO.class
+com\product\spring\service\ProductService.class
+com\product\spring\model\Product.class
+com\product\spring\config\AppConfig.class
+com\product\spring\config\MyWebAppInitializer.class
+com\product\spring\config\WebConfig.class
+com\product\spring\dao\ProductDAOImp.class

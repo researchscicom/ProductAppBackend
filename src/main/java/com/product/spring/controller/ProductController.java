@@ -23,30 +23,28 @@ public class ProductController {
     }
 
     @GetMapping("/product/{id}")
-    public ResponseEntity<Product> getProduct(@PathVariable("id") Long id)
+    public ResponseEntity<Product> getProduct(@PathVariable("id") long id)
     {
         Product product=productService.getProduct(id);
         return ResponseEntity.ok().body(product);
     }
 
     @PostMapping("/product")
-    public ResponseEntity<?> save(@RequestBody Product product)
+    public void save(@RequestBody Product product)
     {
         productService.saveProduct(product);
-        return ResponseEntity.ok().body("New Product has been save with id "+product.getId());
     }
 
-    @PutMapping("product/{id}")
-    public ResponseEntity<?> editProduct(@PathVariable("id") Long id,Product product)
+    @PutMapping("/product/{id}")
+    public void editProduct(@PathVariable("id") long id,@RequestBody Product product)
     {
+        System.out.println(product.toString());
         productService.updateProduct(id,product);
-        return ResponseEntity.ok().body("Update Successfull");
     }
 
-    @DeleteMapping("product/{id}")
-    public ResponseEntity<?> deleteProduct(@PathVariable("id") Long id)
+    @DeleteMapping("/product/{id}")
+    public void deleteProduct(@PathVariable("id") long id)
     {
         productService.deleteProduct(id);
-        return ResponseEntity.ok().body("Delete product that id = "+id);
     }
 }
