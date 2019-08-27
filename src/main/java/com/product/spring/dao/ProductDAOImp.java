@@ -14,6 +14,7 @@ public class ProductDAOImp implements ProductDAO{
     @Autowired
     public SessionFactory sessionFactory;
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<Product> getAllProducts() {
         List<Product> ls= sessionFactory.getCurrentSession().createQuery("from Product").list();
