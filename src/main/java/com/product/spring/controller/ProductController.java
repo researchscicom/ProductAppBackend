@@ -1,6 +1,7 @@
 package com.product.spring.controller;
 
 import com.product.spring.model.Product;
+import com.product.spring.service.ProducerService;
 import com.product.spring.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,9 @@ import java.util.List;
 public class ProductController {
     @Autowired
     public ProductService productService;
+
+    @Autowired
+    public ProducerService producerService;
 
     @GetMapping("/product")
     public ResponseEntity<List<Product>> getProducts()
@@ -33,6 +37,7 @@ public class ProductController {
     public void save(@RequestBody Product product)
     {
         productService.saveProduct(product);
+        producerService.sendMsg(product);
     }
 
     @PutMapping("/product/{id}")
@@ -47,4 +52,11 @@ public class ProductController {
     {
         productService.deleteProduct(id);
     }
+
+    @PostMapping("/produce")
+    public void sendMsg(@RequestBody Product product)
+    {
+        producerService.sendMsg(product);
+    }
+
 }

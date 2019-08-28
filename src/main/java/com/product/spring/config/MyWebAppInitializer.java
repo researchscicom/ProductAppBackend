@@ -7,7 +7,7 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { AppConfig.class };
+        return new Class[] { AppConfig.class , MqConfig.class};
     }
 
     @Override

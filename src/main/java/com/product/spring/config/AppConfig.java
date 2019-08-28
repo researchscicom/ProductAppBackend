@@ -1,20 +1,17 @@
 package com.product.spring.config;
 
+import com.rabbitmq.client.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import static org.hibernate.cfg.Environment.*;
-import javax.sql.DataSource;
 import java.util.Properties;
 
-import static org.hibernate.cfg.AvailableSettings.*;
 
 @Configuration
 @PropertySource("classpath:db.properties")
@@ -25,6 +22,7 @@ public class AppConfig {
 
     @Autowired
     private Environment env;
+
     @Bean
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
@@ -63,4 +61,5 @@ public class AppConfig {
         transactionManager.setSessionFactory(getSessionFactory().getObject());
         return transactionManager;
     }
+
 }

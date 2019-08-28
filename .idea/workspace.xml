@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53339d5b-549d-4ec5-ad9a-f2ab3640b498" name="Default Changelist" comment="">
+    <list default="true" id="53339d5b-549d-4ec5-ad9a-f2ab3640b498" name="Default Changelist" comment="Update Customer Model">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/config/MqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ProducerServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/config/MyWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/config/MyWebAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/config/MyWebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/config/MyWebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/config/MyWebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/config/MyWebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/db.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +48,13 @@
     </option>
   </component>
   <component name="ProjectId" id="1Pm03rPGWMKx1OhCBpKjeuyNYFr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Videos/SpringRabbitMQSample" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -95,8 +114,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Product API creation" />
     <MESSAGE value="Update bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update bug" />
+    <MESSAGE value="Update Customer Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Customer Model" />
   </component>
 </project>
