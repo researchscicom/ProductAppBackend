@@ -16,6 +16,6 @@ public class ProducerServiceImp implements ProducerService {
 
     @Override
     public void sendMsg(Product product) {
-        amqpTemplate.convertAndSend("product.direct","product.routingkey",product);
+        amqpTemplate.convertSendAndReceive("product.direct","product.routingkey",product);
     }
 }

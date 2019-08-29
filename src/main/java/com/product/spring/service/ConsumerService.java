@@ -1,7 +1,8 @@
 package com.product.spring.service;
 
-import org.springframework.amqp.rabbit.AsyncRabbitTemplate;
+
+import org.springframework.amqp.core.Message;
 
 public interface ConsumerService {
-    void consumerMessage(AsyncRabbitTemplate.RabbitMessageFuture data);
+    Object consumerMessage(Object data) throws Exception;
 }
