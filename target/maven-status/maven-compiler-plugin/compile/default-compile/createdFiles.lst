@@ -3,8 +3,10 @@ com\product\spring\dao\ProductDAO.class
 com\product\spring\service\ProductService.class
 com\product\spring\config\MqConfig.class
 com\product\spring\service\ProducerServiceImp.class
+com\product\spring\service\ConsumerService.class
 com\product\spring\config\MyWebAppInitializer.class
 com\product\spring\dao\ProductDAOImp.class
+com\product\spring\service\ConsumerServiceImp.class
 com\product\spring\service\ProductServiceImp.class
 com\product\spring\model\Product.class
 com\product\spring\service\ProducerService.class
