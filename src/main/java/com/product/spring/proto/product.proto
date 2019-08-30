@@ -1,0 +1,11 @@
+syntax = "proto3";
+package product;
+
+option java_outer_classname = "ProductProto";
+
+message Product{
+    string name=1;
+    string cost = 2;
+    string quantity = 3;
+    string description = 4;
+}

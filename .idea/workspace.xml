@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53339d5b-549d-4ec5-ad9a-f2ab3640b498" name="Default Changelist" comment="Update Customer Model">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/proto/product.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ConsumerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ConsumerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ConsumerServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ProducerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/spring/service/ProducerServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/service/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/service/ConsumerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/service/ConsumerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/service/ConsumerServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/product/spring/service/ProducerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/spring/service/ProducerServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ConsumerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ConsumerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ConsumerServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ProducerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/product/WEB-INF/classes/com/product/spring/service/ProducerServiceImp.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

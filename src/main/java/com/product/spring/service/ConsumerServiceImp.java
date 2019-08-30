@@ -1,8 +1,9 @@
 package com.product.spring.service;
 
-import com.product.spring.dao.ProductDAO;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.product.spring.model.Product;
-import org.springframework.amqp.core.Message;
+import org.springframework.amqp.AmqpIOException;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class ConsumerServiceImp implements ConsumerService{
     private static final String EXCHANGE_NAME = "customer.direct";
     @Autowired
-    public ProductService productService;
+    private ProductService productService;
 
     @Override
     @RabbitListener(
@@ -22,11 +23,22 @@ public class ConsumerServiceImp implements ConsumerService{
                     exchange = @Exchange(value = EXCHANGE_NAME),
                     key = "customer.routingkey")
     )
-    public Object consumerMessage(Object data) throws Exception{
+    public Object consumerMessage(Long proId) throws AmqpIOException {
         System.out.println("=============== Message ==================");
-        System.out.println(data);
+        System.out.println(proId);
         System.out.println("==========================================");
-        Product product=productService.getProduct(1);
-        return product.toString();
+        Product product=productService.getProduct(proId);
+        if(product==null){
+            return null;
+        }
+        else{
+            ObjectMapper obj = new ObjectMapper();
+            try {
+                String pro = obj.writeValueAsString(product);
+                return pro;
+            }catch(JsonProcessingException e){
+                return null;
+            }
+        }
     }
 }
