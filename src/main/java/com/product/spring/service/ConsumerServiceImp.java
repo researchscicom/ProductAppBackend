@@ -9,19 +9,19 @@ import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 @Service
 public class ConsumerServiceImp implements ConsumerService{
-    private static final String EXCHANGE_NAME = "customer.direct";
     @Autowired
     private ProductService productService;
 
     @Override
     @RabbitListener(
             bindings = @QueueBinding(
-                    value = @Queue(value = "customer.queue",durable = "true"),
-                    exchange = @Exchange(value = EXCHANGE_NAME),
-                    key = "customer.routingkey")
+                    value = @Queue(value = "${rabbitmq.queue}",durable = "true"),
+                    exchange = @Exchange(value = "${rabbitmq.exchange}"),
+                    key = "${rabbitmq.routingkey}")
     )
     public Object consumerMessage(Long proId) throws AmqpIOException {
         System.out.println("=============== Message ==================");
